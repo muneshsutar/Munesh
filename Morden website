@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS CAFFE</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: 'Flamenco', cursive;
+
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url('../image/background.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
+}
+.row{
+    max-width: 1188px;
+    margin: 0 auto;
+
+}
+.clearfix::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+
+}
+/* .name h3{
+    height: 20px;
+    padding: auto;
+    margin-top: 20px;
+    margin-left: 10px; */
+
+/* } */
+.main-nav{
+    float: right;
+    margin-top: 60px;
+
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    list-style: none;
+
+}
+.main-nav li a{
+    padding: 5px 0px;
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    text-transform: uppercase;
+    font-weight: 100;
+
+
+    
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid  #bf55ec;
+    
+
+
+}
+.main-contant-header{
+    width:1188px ;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+.main-contant-header h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+
+
+
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s ,border 0.2s ,color 0.2s;
+
+
+}
+.btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec ;
+}
+.btn-full:hover{
+    background-color: #fff;
+    
+}
+.btn-nav{
+    background-color: transparent;
+    color:#fff;
+    border: 1px solid #fff;
+
+}
+.btn-nav:hover{
+    background-color:#bf55ec ;
+    
+}
+.changecolor{
+    animation: mscolorchange 1s infinite;
+}
+@keyframes mscolorchange{
+    0%{color: #000;}
+    25%{color: #fff;}
+    50%{color: #bf55ec;}
+    75%{color: red;}
+    100%{color:#fff;}
+}
+/*//////media queary/////*/
+@media only screen and (max-width: 768px){
+    .main-contant-header h1{
+        width: 100%;
+        padding: 0 2%;
+        font-size: 200%;
+
+
+    }
+}
+@media only screen and (max-width: 1194px ){
+    .main-contant-header h1 {
+        font-size: 200%;
+        width: 100%;
+        padding: 0 2%;
+
+
+
+    }
+}
+@media only screen and (max-width: 1047px ){
+    .main-contant-header h1 {
+        font-size: 200%;
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+</style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <h1 class="logo">WELCOME CAFFE</h1>
+                <ul class="main-nav animated animate__slideInDown">
+
+                    <li><a href="#">CAKR DELIVERY</a></li>
+                    <li><a href="#">HOW TO ORDER</a></li>
+                    <li><a href="#">CHECK ORDER</a></li>
+                    <li><a href="#">SIGN UP</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-contant-header">
+            <h1>WELCOME TO <samp class="changecolor">MS CAFFE</samp>. <br>HOUSE OF CAKE LOVER OO YES </h1>
+            <a href="#" class="btn btn-full">Click To Order</a>
+            <a href="#" class="btn btn-nav">Show Me More</a>
+        </div>
+    </header>
+</body>
+
+</html>
