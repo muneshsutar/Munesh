@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MS Fitness</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> -->
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+body {
+     font-family: 'Baloo Bhai', cursive;
+    color: #fff;
+
+    margin: 0px;
+    padding: 0px;
+    background: url('img/bg.jpg');
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+
+}
+    
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 60px;
+    top: 20px;
+}
+.left img {
+    width: 136px;
+    filter: invert(100%);
+ }
+    
+.left div {
+    line-height: 19px;
+    font-size: 26px;
+    text-align: center;
+}
+    
+.mid {
+    display: block;
+    width: 36%;
+    margin: 29px auto;
+    /* border: 2px solid green; */
+}
+    
+        
+
+.right {
+    position: absolute;
+    right: 34px;
+    top: 43px;
+    display: inline-block;
+    /* border: 2px solid yellow; */       
+}
+    
+  /* .right-photo{
+    position: absolute;
+    right: 34px;
+    top: 250px;
+    margin-right: 30px;
+ */
+
+  /* }       */
+        
+        
+        
+.navbar {
+    display: inline-block;        
+        
+}
+    
+        
+        
+        
+        
+.navbar li {
+    display: inline-block;
+    font-size: 15px;        
+}
+    
+        
+        
+        
+        
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;       
+ }        
+.navbar li a:hover .navbar li a.active {
+    text-decoration: underline;
+    color: #fff;
+
+}
+    
+        
+        
+        
+        
+.btn {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 9px;
+    /* background-color: black;
+    color: white; */
+    padding: 4px 14px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+        
+}
+    
+/* .right.btn:hover{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+        
+} */
+        
+        
+        
+        
+.btn:hover {
+    background-color: rgb(31, 30, 30);
+      color: white;  
+}
+    
+  .one{
+      color: rgb(119, 116, 116);;
+
+  }      
+        
+        
+        
+.container {
+    border: 2px solid #fff;
+    margin: 106px 80px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+        
+}
+    
+       
+       
+       
+       
+ 
+.form-group input {
+    font-family: 'cursive';
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;        
+}
+    
+.container h1 {
+    text-align: center;
+ }        
+.container button {
+    display: block;
+    width: 74%;
+    margin: 20px auto;
+}
+</style>
+
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+            <div>MS logo</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Fitness calculater.html">Fitness Calculator</a></li>
+                <li><a href="contct.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="one">Join the best gym of Bhadrack now</h1>
+        <form action="connect.php" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Age" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Gender" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Hight" placeholder="Enter your Hight">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Weight" placeholder="Enter your Weight">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Locality" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Email" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Phone" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+       
+       
+
+    </div>
+</body>
+
+</html>
+
+
+
+.....//php//.....
+ <?php
+$name=$_post['name'] ;
+$Age = $_post['Age'] ;
+$Gender = $_post['Gender'] ;
+$Hight = $_post['Hight'] ;
+$Weight = $_post['Weight'] ;
+$Locality = $_post['Locality'] ;
+$Email = $_post['Email'] ;
+$Phone = $_post['Phone'] ;
+//---------data base-----//
+$conn = new mysqli('localhost','root','' ,'' 'gym1');
+if($conn->connection_error){
+    die('connection failed : '.$conn->connect_error);
+
+}
+else{
+    $stmt = $conn->prepare("insert into reagestration(name,Age,Gender,Hight,Weight,Locality,Email,Phone)values(?,?,?,?,?,?,?,?)");
+    $stmt->bind_param("ssssiiii",$name,$Gender,$Locality,$Email,$Age,$Hight,$Weight,$Phone);
+    $stmt->execute();
+    echo"reagistration Successffully complited"
+    $stmt->close();
+    $conn->close();
+}
+?>
